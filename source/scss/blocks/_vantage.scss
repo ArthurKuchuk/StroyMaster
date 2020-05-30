@@ -1,0 +1,85 @@
+.vantage__item-1,
+.vantage__item-2,
+.vantage__item-3 {
+	position: relative;
+	text-align: center;
+	margin-bottom: 150px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: -120px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+.vantage__item-1 {
+	&::before {
+		width: 108px;
+		height: 103px;
+
+		background-image: url(../img/vantage-1.png);
+	}
+}
+.vantage__item-2 {
+	&::before {
+		top: -140px;
+		transform: translateX(-60%);
+
+		width: 133px;
+		height: 114px;
+
+		background-image: url(../img/vantage-2.png);
+	}
+}
+.vantage__item-3 {
+	&::before {
+		width: 124px;
+		height: 105px;
+
+		background-image: url(../img/vantage-3.png);
+	}
+}
+
+@media (min-width: 767px) {
+  .vantage {
+    padding-bottom: 30px;
+  }
+	.vantage__list {
+		padding-top: 150px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.vantage__item-1,
+	.vantage__item-2,
+	.vantage__item-3 {
+    margin-bottom: 0;
+		width: 30%;
+	}
+}
+
+@media (min-width: 1010px) {
+	.vantage__list {
+    position: relative;
+    font-size: 16px;
+    
+    &::before {
+      content: "";
+    
+      position: absolute;
+    
+      left: -450px;
+      top: -300px;
+    
+      height: 418px;
+      width: 698px;
+    
+      background-image: url(../img/vantage-house.png);
+    }
+    
+	}
+	.vantage__title {
+		font-size: 22px;
+	}
+}

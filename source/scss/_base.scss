@@ -1,0 +1,125 @@
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+			url('Montserrat-Bold.woff2') format('woff2'),
+			url('Montserrat-Bold.woff') format('woff'),
+			url('Montserrat-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+			url('Montserrat-Regular.woff2') format('woff2'),
+			url('Montserrat-Regular.woff') format('woff'),
+			url('Montserrat-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+////////////////////////////////////////////////////////
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+////////////////////////////////////////////////////////
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+////////////////////////////////////////////////////////
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+body {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+////////////////////////////////////////////////////////
+.container {
+	width: 290px;
+	margin: 0 auto;
+}
+
+@media(min-width:767px) {
+	.container {
+		width: 720px;
+	}
+}
+@media(min-width:1010px) {
+	.container {
+		width: 1000px;
+	}
+}
+//////////////////////////////////////
+.button {
+	height: 50px;
+	border: none;
+	border-radius: 10px;
+	background-color: #00c633;
+	font-weight: 700;
+	color: #fff;
+	transition: .3s;
+	&:hover,
+	&:focus {
+		outline: none;
+		cursor: pointer;
+		background-color: #008a22;
+	}
+	&:active {
+		opacity: .5;
+		transition: none;
+	}
+}
+
+.h2-tagline {
+	font-size: 28px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+@media(min-width: 1010px) {
+	.h2-tagline {
+		font-size: 32px;
+	}
+}
+.h2-subtagline {
+	font-size: 18px;
+	font-weight: 500;
+  margin-bottom: 40px;
+}
+@media(min-width: 1010px) {
+	.h2-subtagline {
+		font-size: 22px;
+		margin-bottom: 70px;
+	}
+}
+
+.clearfix {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+

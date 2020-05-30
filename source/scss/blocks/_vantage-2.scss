@@ -1,0 +1,101 @@
+.vantage-2 {
+	text-align: center;
+	.h2-tagline {
+		margin-bottom: 200px;
+	}
+}
+.vantage-2__item-1,
+.vantage-2__item-2,
+.vantage-2__item-3,
+.vantage-2__item-4,
+.vantage-2__item-5,
+.vantage-2__item-6 {
+	position: relative;
+  text-align: center;
+	margin-bottom: 200px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: -150px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.vantage-2__item-1 {
+  &::before {
+		width: 221px;
+		height: 131px;
+
+		background-image: url(../img/vantage-2-1.png);
+	}
+}
+.vantage-2__item-2 {
+  &::before {
+		width: 195px;
+		height: 148px;
+
+		background-image: url(../img/vantage-2-2.png);
+	}
+}
+.vantage-2__item-3 {
+  &::before {
+		width: 128px;
+		height: 142px;
+
+		background-image: url(../img/vantage-2-3.png);
+	}
+}
+.vantage-2__item-4 {
+	margin-bottom: 230px;
+  &::before {
+		width: 211px;
+		height: 129px;
+
+		background-image: url(../img/vantage-2-4.png);
+	}
+}
+.vantage-2__item-5 {
+  &::before {
+		top: -200px;
+		width: 175px;
+		height: 177px;
+
+		background-image: url(../img/vantage-2-5.png);
+	}
+}
+.vantage-2__item-6 { 
+	margin-bottom: 0;
+
+  &::before {
+		width: 171px;
+		height: 134px;
+
+		background-image: url(../img/vantage-2-6.png);
+	}
+}
+
+@media(min-width: 767px) {
+	.vantage-2__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.vantage-2__item-1,
+	.vantage-2__item-2,
+	.vantage-2__item-3,
+	.vantage-2__item-4,
+	.vantage-2__item-5,
+	.vantage-2__item-6 {
+		width: 30%;
+		margin-bottom: 230px;
+
+	}
+	.vantage-2__item-4,
+	.vantage-2__item-5,
+	.vantage-2__item-6 {
+		margin-bottom: 0;
+	}
+}

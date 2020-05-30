@@ -1,0 +1,237 @@
+
+.greeting__container {
+  position: relative;
+  padding-top: 20px;
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: 0;
+    left: -1250px;
+    z-index: -1;
+    height: 1050px;
+    width: 1920px;
+  
+    background-image: url(../img/greeting-bg-mobile.jpg);
+    background-size: cover;
+  }
+}
+
+.greeting__tagline {
+  display: none;
+}
+
+.greeting__title {
+  margin-bottom: 0;
+  font-size: 32px;
+}
+.greeting__subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.greeting__button {
+  font-size: 15px;
+  font-weight: 700;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.greeting__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 165px;
+  padding-top: 105px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 0 10px #fff;
+  text-align: center;
+}
+
+.greeting__item-1 {
+  position: relative;
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 92px;
+    width: 138px;
+  
+    background-image: url(../img/greeting-list-item-1.png);
+  }
+}
+
+.greeting__item-2 {
+  position: relative;
+  margin-top: 115px;
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 86px;
+    width: 105px;
+  
+    background-image: url(../img/greeting-list-item-2.png);
+  }
+}
+
+.greeting__item-3 {
+  position: relative;
+  margin-top: 120px;
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 99px;
+    width: 138px;
+  
+    background-image: url(../img/greeting-list-item-3.png);
+  }
+}
+//////////////////////////////////////
+@media(min-width: 767px) {
+  .greeting__container {
+    &::before {
+      left: -400px;
+      width: 1440px;
+      height: 606px;
+      background-image: url(../img/greeting-bg.jpg);
+    }
+  }
+
+  .greeting__title {
+    width: 480px;
+    font-size: 33px;
+  }
+
+  .greeting__subtitle {
+    width: 370px;
+    font-size: 19px;
+  }
+
+  .greeting__button {
+    width: 260px;
+  }
+
+  .greeting__top-wrapper {
+    &::after {
+      content: "";
+      clear: both;
+    }
+  }
+  .greeting__tagline {
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    float: right;
+    text-align: center;
+    &::before {
+      content: "";
+    
+      position: absolute;
+    
+      top: -35px;
+      right: -80px;
+      z-index: -1;
+    
+      height: 312px;
+      width: 287px;
+    
+      background-image: url(../img/greeting-banner.png);
+    }
+  }
+  
+  .greeting__list {
+    position: relative;
+    flex-direction: row;
+    padding-top: 50px;
+    width: 666px;
+    font-weight: 700;
+    margin-top: 100px;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: none;
+    border-radius: 10px;
+    &::before {
+      content: "";
+    
+      position: absolute;
+    
+      top: -30px;
+      left: -30px;
+      z-index: -1;
+
+      height: 160px;
+      width: 715px;
+    
+      background-image: url(../img/greeting-list-bg.png);
+      background-size: 100%;
+    }
+    
+  }
+
+  .greeting__item-1,
+  .greeting__item-2,
+  .greeting__item-3 {
+    margin-top: 0;
+  }
+}
+
+@media(min-width: 1010px) {
+  .greeting {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+    &::before {
+      content: "";
+    
+      position: absolute;
+    
+      top: 0;
+      right: 0;
+      z-index: -1;
+      height: 688px;
+      width: 1632px;
+    
+      background-image: url(../img/greeting-bg.jpg);
+      background-size: cover;
+      background-position-x: 100px;
+      background-repeat: no-repeat;
+    }
+  }
+  .greeting__container {
+    padding-top: 50px;
+    &::before {
+      display: none;
+    }
+  }
+  .greeting__title {
+    width: 550px;
+    margin-top: 0;
+    font-size: 43px;
+  }
+  .greeting__tagline {
+    margin-right: 100px;
+  }
+
+  .greeting__list {
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,134 @@
+.good {
+	padding-bottom: 150px;
+}
+.good__list {
+	position: relative;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: 350px;
+		left: 50%;
+		z-index: -1;
+		transform: translateX(-50%);
+		height: 186px;
+		width: 290px;
+
+		background-image: url(../img/good-bg.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+.good__top {
+	position: relative;
+	width: 290px;
+	padding: 20px;
+	padding-bottom: 150px;
+	margin-bottom: 325px;
+
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+	box-shadow: 0 0 0 10px #fff, 0px 0px 50px rgba(0, 0, 0, 0.192);
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		bottom: -1px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 149px;
+		width: 289px;
+
+		background-image: url(../img/good-horn.jpg);
+		background-size: cover;
+	}
+}
+
+.good__bottom {
+	position: relative;
+	width: 290px;
+	padding-left: 20px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		bottom: -100px;
+		left: 120px;
+		z-index: -1;
+		transform: translateX(-50%);
+
+		height: 320px;
+		width: 380px;
+
+		background-image: url(../img/good-right.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+.good__right-title {
+	display: block;
+	text-align: center;
+	padding-right: 30px;
+	font-size: 22px;
+}
+
+@media (min-width: 767px) {
+	.good {
+		padding-bottom: 350px;
+	}
+	.good__list {
+		&::before {
+			top: 115px;
+			height: 462px;
+			width: 720px;
+		}
+	}
+
+	.good__top {
+		margin-bottom: 100px;
+	}
+	.good__bottom {
+		float: right;
+		&::after {
+			content: "";
+			clear: both;
+		}
+	}
+}
+
+@media (min-width: 1010px) {
+	.good {
+		padding-bottom: 450px;
+	}
+	.good__list {
+		font-size: 22px;
+	}
+	.good__top {
+		width: 400px;
+		margin-bottom: 100px;
+		padding-bottom: 230px;
+		&::before {
+			height: 191px;
+			width: 386px;
+		}
+	}
+	.good__bottom {
+		width: 400px;
+		&::before {
+			width: 570px;
+			height: 460px;
+			top: -100px;
+			left: 150px;
+		}
+	}
+	.good__right-title {
+    padding-right: 45px;
+    font-size: 28px;
+	}
+}
