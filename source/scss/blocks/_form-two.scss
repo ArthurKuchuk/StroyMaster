@@ -1,0 +1,213 @@
+.form-two {
+  background-image: url(../img/form-two-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 100px;
+}
+.form-two__list {
+	text-align: center;
+	padding-top: 100px;
+}
+
+.form-two__item-1 {
+  position: relative;
+	margin-bottom: 150px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: -120px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		height: 96px;
+		width: 181px;
+
+		background-image: url(../img/form-two-item-1.png);
+	}
+}
+.form-two__item-2 {
+  position: relative;
+	margin-bottom: 50px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: -130px;
+		left: 50%;
+		transform: translateX(-50%);
+
+    height: 110px;
+    width: 158px;
+    
+		background-image: url(../img/form-two-item-2.png);
+	}
+}
+
+.form-two__wrapper {
+  margin-top: 150px;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  width: 290px;
+
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -100px;
+    left: -30px;
+  
+    height: 580px;
+    width: 350px;
+    z-index: 0;
+    background-image: url(../img/form-two-wrapper.png);
+    background-size: 350px 580px;
+  }
+  
+}
+.form-two__heading {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+}
+.form-two__subheading {
+  position: relative;
+  z-index: 1;
+}
+.form-two__form {
+  position: relative;
+  z-index: 1;
+}
+.form-two__name,
+.form-two__tel {
+  margin-bottom: 30px;
+  height: 50px;
+  width: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  padding-left: 10px;
+  &::placeholder {
+    font-size: 15px;
+  }
+  &:focus {
+    &::placeholder {
+      color: transparent;
+      transition: .1s;
+    }
+  }
+}
+
+.form-two__button {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.form-two__label-politic {
+  font-size: 12px;
+}
+
+.form-two__checkbox {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+@media(min-width: 767px) {
+  .form-two {
+    padding-bottom: 300px;    
+  }
+  .form-two__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-two__big-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-two__wrapper {
+    &::after {
+      content: "";
+    
+      position: absolute;
+    
+      bottom: -200px;
+      left: -500px;
+      z-index: 3;
+      height: 295px;
+      width: 518px;
+    
+      background-image: url(../img/form-two-house.png);
+    }
+  }
+  .form-two__item-1,
+  .form-two__item-2 {
+    width: 300px;
+  }
+  .form-two__name,
+  .form-two__tel {
+    display: block;
+    margin: 20px auto;
+  }
+}
+@media(min-width: 1010px) {
+  .form-two__wrapper {
+    width: 400px;
+    &::before {
+      width: 500px;
+      height: 650px;
+      left: -50px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &::after {
+      content: "";
+    
+      position: absolute;
+    
+      bottom: -250px;
+      left: -630px;
+      z-index: 3;
+      height: 369px;
+      width: 648px;
+    
+      background-image: url(../img/form-two-house.png);
+      background-size: cover;
+    }
+  }
+  .form-two__heading {
+    position: relative;
+    font-size: 28px;
+    &::before {
+      content: "";
+    
+      position: absolute;
+    
+      top: -165px;
+      right: -130px;
+    
+      height: 132px;
+      width: 119px;
+    
+      background-image: url(../img/form-two-bolt.png);
+    }
+    
+  }
+  .form-two__subheading {
+    font-size: 22px;
+  }
+  .form-two__name,
+  .form-two__tel {
+    width: 250px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .form-two__button {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+  }
+}

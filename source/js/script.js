@@ -21,4 +21,7 @@ $('.slider-projects').slick({
 		},
 		]
 	});
-	
+  
+  function txt_2_clpbrd(){
+    window.clipboardData.setData("Text","muxamatnurovna@mail.ru");
+  }

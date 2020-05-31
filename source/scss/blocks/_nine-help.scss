@@ -1,177 +1,179 @@
 .nine-help {
-  position: relative;
-  &::before {
-    content: "";
-  
-    position: absolute;
-  
-    bottom: -200px;
-    right: 50%;
-    z-index: -1;
-    transform: translateX(50%);
-    height: 382px;
-    width: 460px;
-  
-    background-image: url(../img/nine-help-bg.jpg);
-  background-size: 460px 382px;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  }
-  
+	position: relative;
+	margin-bottom: 230px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		bottom: -200px;
+		right: 50%;
+		z-index: -1;
+		transform: translateX(39%);
+		height: 382px;
+		width: 460px;
+
+		background-image: url(../img/nine-help-bg.jpg);
+		background-size: 460px 382px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+	}
 }
 .nine-help__title {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-left: 50px;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding-left: 50px;
 }
 
 .nine-help__nine {
-  position: relative;
-  font-size: 28px;
-  span {
-    position: absolute;
-    font-size: 72px;
-    left: -50px;
-    top: -15px;
-  }
+	position: relative;
+	font-size: 28px;
+	span {
+		position: absolute;
+		font-size: 72px;
+		left: -50px;
+		top: -15px;
+	}
 }
 .nine-help__list {
-  margin-bottom: 100px;
+	margin-bottom: 100px;
 }
-.nine-help__item  {
-  position: relative;
-  padding-left: 50px;
-  margin-bottom: 30px;
-  &::before {
-    content: "";
-  
-    position: absolute;
-  
-    top: 50%;
-    transform:translateY(-50%);
-    left: 0;
-  
-    height: 35px;
-    width: 35px;
-  
-    background-image: url(../img/nine-help-item.png);
-  }
+.nine-help__item {
+	position: relative;
+	padding-left: 50px;
+	margin-bottom: 30px;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+
+		height: 35px;
+		width: 35px;
+
+		background-image: url(../img/nine-help-item.png);
+	}
 }
 
 .nine-help__banner {
-  position: relative;
-  text-align: center;
-  width: 200px;
-  margin: 0 auto;
-  &::before {
-    content: "";
-  
-    position: absolute;
-  
-    top: -60px;
-    left:  -73px;
-    z-index: -1;
-    height: 252px;
-    width: 320px;
-  
-    background-image: url(../img/nine-help-banner.png);
-    background-size: 320px 252px;
-  }
+	position: relative;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: -60px;
+		left: -73px;
+		z-index: -1;
+		height: 252px;
+		width: 320px;
+
+		background-image: url(../img/nine-help-banner.png);
+		background-size: 320px 252px;
+	}
 }
 
-@media(min-width: 767px) {
-  .nine-help {
-    overflow: hidden;
-    padding-bottom: 200px;
-    &::before {
-      width: 690px;
-      height: 1000px;
-      bottom: -300px;
-      transform: translateX(67%);
-      background-size: 690px 573px;
-      background-position: 0 150px;
-    }
-  }
-  .nine-help__title {
-    width: 500px;
-    margin-bottom: 70px;
-  }
-  .nine-help__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 550px;
-  }
-  .nine-help__item {
-    width: 270px;
-  }
-  .nine-help__banner {
-    position: relative;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    &::before {
-      content: "";
-    
-      position: absolute;
-    
-      top: -60px;
-      left:  -60px;
-      z-index: -1;
-      height: 252px;
-      width: 320px;
-    
-      background-image: url(../img/nine-help-banner.png);
-      background-size: 320px 252px;
-    }
-  }
+@media (min-width: 767px) {
+	.nine-help {
+		overflow: hidden;
+		padding-bottom: 230px;
+		margin-bottom: 0px;
+
+		&::before {
+			width: 690px;
+			height: 1000px;
+			bottom: -250px;
+			transform: translateX(67%);
+			background-size: 690px 573px;
+			background-position: 0 150px;
+		}
+	}
+	.nine-help__title {
+		width: 500px;
+		margin-bottom: 70px;
+	}
+	.nine-help__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 550px;
+	}
+	.nine-help__item {
+		width: 270px;
+	}
+	.nine-help__banner {
+		position: relative;
+		text-align: center;
+		width: 200px;
+		margin: 0 auto;
+		&::before {
+			content: "";
+
+			position: absolute;
+
+			top: -60px;
+			left: -60px;
+			z-index: -1;
+			height: 252px;
+			width: 320px;
+
+			background-image: url(../img/nine-help-banner.png);
+			background-size: 320px 252px;
+		}
+	}
 }
 
-@media(min-width: 1010px) {
-  .nine-help {
-    padding-bottom: 0;
-    &::before {
-      width: 620px;
-      height: 764px;
+@media (min-width: 1010px) {
+	.nine-help {
+		padding-bottom: 0;
+		&::before {
+			width: 620px;
+			height: 764px;
 
-      bottom: auto;
-      top: 0;
-      transform: translateX(97%);
+			bottom: auto;
+			top: -150px;
+			transform: translateX(97%);
 
-      background-size: 620px 764px;
-    }
-    .container {
-      position: relative;
-    }
-  }
-  .nine-help__title {
-    font-size: 35px;
-  }
-  .nine-help__nine {
-    font-size: 38px;
-    span {
-      left: -80px;
-      top: -25px;
-      font-size: 112px;
-    }
-  }
-  .nine-help__banner {
-    position: absolute;
-    text-align: center;
-    width: 200px;
-    top: 250px;
-    left: 700px;
-    font-size: 18px;
-    width: 250px;
-    &::before {
-      top: -80px;
-      left:  -80px;
-      height: 336px;
-      width: 427px;
-    
-      background-image: url(../img/nine-help-banner.png);
-      background-size: 427px 336px;
-    }
-  }
+			background-size: 620px 600px;
+		}
+		.container {
+			position: relative;
+		}
+	}
+	.nine-help__title {
+		font-size: 35px;
+	}
+	.nine-help__nine {
+		font-size: 38px;
+		span {
+			left: -80px;
+			top: -25px;
+			font-size: 112px;
+		}
+	}
+	.nine-help__banner {
+		position: absolute;
+		text-align: center;
+		width: 200px;
+		top: 250px;
+		left: 700px;
+		font-size: 18px;
+		width: 250px;
+		&::before {
+			top: -80px;
+			left: -80px;
+			height: 336px;
+			width: 427px;
+
+			background-image: url(../img/nine-help-banner.png);
+			background-size: 427px 336px;
+		}
+	}
 }
