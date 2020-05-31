@@ -1,0 +1,95 @@
+.contractor{
+  padding-top: 50px;
+
+  .h2-tagline {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+.contractor__item {
+  position: relative;
+  width: 200px;
+  margin: 0 auto 300px;
+  text-align: center;
+}
+
+.contractor__item-tagline {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contractor__item-1 {
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -70px;
+    left: -100px;
+    z-index: -1;
+    height: 361px;
+    width: 350px;
+  
+    background-image: url(../img/contractor-1.png);
+    background-size: 350px 361px;
+    background-repeat: no-repeat;
+  }
+  
+}
+.contractor__item-2 {
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    height: 361px;
+    width: 350px;
+  
+    background-image: url(../img/contractor-2.png);
+    background-size: 350px 361px;
+    background-repeat: no-repeat;
+  }
+  
+}
+.contractor__item-3 {
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+    height: 379px;
+    width: 304px;
+  
+    background-image: url(../img/contractor-3.png);
+    background-size: 304px 379px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media(min-width: 1010px) {
+  .contractor {
+    .h2-tagline {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+  }
+  .contractor__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contractor__item-1 {
+    &::before {
+      top: -45px;
+    }
+  }
+}
