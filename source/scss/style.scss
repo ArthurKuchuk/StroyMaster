@@ -1,5 +1,7 @@
 @import 'slick/slick.scss';
 @import 'slick/slick-theme.scss';
+@import 'animate.scss';
+
 @import '_base.scss';
 
 
@@ -17,4 +19,8 @@
 @import 'blocks/_nine-help.scss';
 @import 'blocks/_form-two.scss';
 @import 'blocks/_footer.scss';
+@import 'blocks/_modal.scss';
 
+.show {
+  display: flex;
+}

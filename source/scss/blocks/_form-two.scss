@@ -105,6 +105,10 @@
 .form-two__button {
   width: 200px;
   margin-bottom: 20px;
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
 }
 
 .form-two__label-politic {

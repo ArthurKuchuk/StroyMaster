@@ -1,0 +1,97 @@
+.modal {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal__container {
+  position: relative;
+  width: 350px;
+  height: 650px;
+  padding: 40px;
+  padding-top: 80px;
+  margin-top: 30px;
+  text-align: center;
+  background-image: url(../img/modal-bg.png);
+  background-size: 350px 650px;
+  background-repeat: no-repeat;
+}
+
+.modal__close {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  width: 24px;
+  height: 24px;
+
+  right: 30px;
+  top: 50px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 24px;
+    background-color: #666;
+    transform: rotateZ(45deg);
+  }
+  &::after {
+    transform: rotateZ(-45deg);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal__name,
+.modal__tel {
+  margin-bottom: 10px;
+  height: 50px;
+  width: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  padding-left: 10px;
+  &::placeholder {
+    font-size: 15px;
+  }
+  &:focus {
+    &::placeholder {
+      color: transparent;
+      transition: .1s;
+    }
+  }
+}
+.modal__button {
+  width: 200px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+}
+
+.modal__label-politic {
+  font-size: 10px;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.9); 
+}
