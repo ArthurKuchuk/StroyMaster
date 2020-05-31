@@ -57,6 +57,12 @@
   }
 }
 @media(min-width: 1010px) {
+  .form-one {
+    .h2-subtagline{
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
   .form-one__name,
   .form-one__tel {
     margin-right: 50px;
