@@ -21,6 +21,12 @@
 @import 'blocks/_footer.scss';
 @import 'blocks/_modal.scss';
 
+@import 'blocks/_slider-modal.scss';
+
 .show {
   display: flex;
+}
+
+.show-modal-slider {
+  display: block;
 }
